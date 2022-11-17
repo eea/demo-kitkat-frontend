@@ -65,7 +65,8 @@ output.xml
 report.html
 selenium-screenshot-*.png
 /selenium/
-cypress/videos/
+cypress/reports
+cypress/videos
 cypress/screenshots
 
 # Local environment setup
@@ -84,11 +85,5 @@ public/critical.css
 src/addons/*
 /cache
 
-# yarn 3
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+.nyc_output/
+.yarn/
