@@ -4,7 +4,7 @@ COPY . /app/
 WORKDIR /app/
 
 # Update apt packages
-RUN runDeps="openssl ca-certificates patch gosu git tmux locales-all" \
+RUN runDeps="openssl ca-certificates patch gosu bsdmainutils build-essential git tmux locales-all" \
  && apt-get update \
  && apt-get install -y --no-install-recommends $runDeps \
  && apt-get clean \
@@ -14,6 +14,8 @@ RUN runDeps="openssl ca-certificates patch gosu git tmux locales-all" \
  && mkdir -p /app/src/addons \
  && rm -rf /app/src/addons/* \
  && find /app/ -not -user node -exec chown node {} \+
+
+RUN corepack enable
 
 USER node
 RUN yarn \

@@ -87,6 +87,29 @@ cypress-run:	## Run cypress integration tests
 cypress-open:	## Open cypress integration tests
 	NODE_ENV=development  $(NODE_MODULES)/cypress/bin/cypress open
 
+.PHONY: install
+install: ## Install the frontend
+	@echo "Install frontend"
+	$(MAKE) omelette
+	$(MAKE) preinstall
+	yarn install
+
+.PHONY: preinstall
+preinstall: ## Preinstall task, checks if missdev (mrs-developer) is present and runs it
+	if [ -f $$(pwd)/mrs.developer.json ]; then make develop; fi
+
+.PHONY: develop
+develop: ## Runs missdev in the local project (mrs.developer.json should be present)
+	npx -p mrs-developer missdev --config=jsconfig.json --output=addons --fetch-https
+
+.PHONY: omelette
+omelette: ## Creates the omelette folder that contains a link to the installed version of Volto (a softlink pointing to node_modules/@plone/volto)
+	if [ ! -d omelette ]; then ln -sf node_modules/@plone/volto omelette; fi
+
+.PHONY: patches
+patches:
+	/bin/bash patches/patchit.sh > /dev/null 2>&1 ||true
+
 .PHONY: help
 help:           ## Show this help.
 	@echo -e "$$(grep -hE '^\S+:.*##' $(MAKEFILE_LIST) | sed -e 's/:.*##\s*/:/' -e 's/^\(.\+\):\(.*\)/\\x1b[36m\1\\x1b[m:\2/' | column -c2 -t -s :)"

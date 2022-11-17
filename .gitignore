@@ -86,4 +86,7 @@ src/addons/*
 /cache
 
 .nyc_output/
-.yarn/
+
+# yarn 3
+.pnp.*
+.yarn/cache
