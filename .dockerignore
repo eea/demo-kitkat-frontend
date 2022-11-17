@@ -1,5 +1,5 @@
 .storybook
-.yarn
+.yarn/cache
 api
 build
 cache
