@@ -1,12 +1,10 @@
 pipeline {
   environment {
-    RANCHER_STACKID = ""
-    RANCHER_ENVID = ""
+    RANCHER_STACKID = "1st2537"
+    RANCHER_ENVID = "1a140884"
     GIT_NAME = "demo-kitkat-frontend"
     registry = "eeacms/demo-kitkat-frontend"
     template = "templates/demo-kitkat-frontend"
-    dockerImage = ''
-    tagName = ''
     SONARQUBE_TAG = 'demo-kitkat.dev2aws.eea.europa.eu'
   }
 
