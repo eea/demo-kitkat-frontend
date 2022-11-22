@@ -1861,9 +1861,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-eea-kitkat@npm:10.0.0":
-  version: 10.0.0
-  resolution: "@eeacms/volto-eea-kitkat@npm:10.0.0"
+"@eeacms/volto-eea-kitkat@npm:10.1.0":
+  version: 10.1.0
+  resolution: "@eeacms/volto-eea-kitkat@npm:10.1.0"
   dependencies:
     "@eeacms/volto-accordion-block": 6.0.0
     "@eeacms/volto-banner": 3.0.1
@@ -1877,7 +1877,7 @@ __metadata:
     "@eeacms/volto-description-block": 1.0.1
     "@eeacms/volto-group-block": 5.0.1
     "@eeacms/volto-hero-block": 2.0.0
-    "@eeacms/volto-listing-block": 1.0.1
+    "@eeacms/volto-listing-block": 2.1.0
     "@eeacms/volto-matomo": 3.0.1
     "@eeacms/volto-metadata-block": 5.0.1
     "@eeacms/volto-object-widget": 5.0.1
@@ -1900,7 +1900,7 @@ __metadata:
     "@eeacms/volto-widgets-view": 4.0.1
     "@kitconcept/volto-blocks-grid": 5.1.1
     "@plone-collective/volto-sentry": 0.2.0
-  checksum: 2daf47f4ada28569ab8464094e100242fb7b0dd0f093fd6fb14c51645701a0bbced509521b60badc29cf94e0abcb5442bf94f3e1767ac37f74b71a7b428603a6
+  checksum: 262b90f2864cf89ca28735b5aebe607c55bffb6a4409183be061b511a572f9708272f4529afb189086c4fa04905b565434c13e672aa282e9d1f1677c91af4743
   languageName: node
   linkType: hard
 
@@ -1920,14 +1920,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-listing-block@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@eeacms/volto-listing-block@npm:1.0.1"
+"@eeacms/volto-listing-block@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@eeacms/volto-listing-block@npm:2.1.0"
   dependencies:
     react-resize-detector: 7.1.2
     react-slick: 0.29.0
     slick-carousel: 1.8.1
-  checksum: 4f3417eb59d2a9967d4744f9850ae4b04fc44caad692e5bde2ec79e1251f137d3d842cc198b411ba198d2b138ae7995479764a91c792742436266b751f18ab0e
+  checksum: 572cdf7a28e26f71b2447c20714590eba2924e26b010f908f97cf774b2c43b485db0dbbb25e5b52a55a6b7188ae777abcecf78687291cd00a5efb7f137a9b529
   languageName: node
   linkType: hard
 
@@ -9762,7 +9762,7 @@ __metadata:
   resolution: "demo-kitkat-frontend@workspace:."
   dependencies:
     "@cypress/code-coverage": ^3.10.0
-    "@eeacms/volto-eea-kitkat": 10.0.0
+    "@eeacms/volto-eea-kitkat": 10.1.0
     "@plone/scripts": ^2.1.2
     "@plone/volto": 16.0.0-alpha.50
     "@storybook/addon-actions": ^6.3.0

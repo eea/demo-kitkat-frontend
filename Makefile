@@ -91,12 +91,7 @@ cypress-open:	## Open cypress integration tests
 install: ## Install the frontend
 	@echo "Install frontend"
 	$(MAKE) omelette
-	$(MAKE) preinstall
 	yarn install
-
-.PHONY: preinstall
-preinstall: ## Preinstall task, checks if missdev (mrs-developer) is present and runs it
-	if [ -f $$(pwd)/mrs.developer.json ]; then make develop; fi
 
 .PHONY: develop
 develop: ## Runs missdev in the local project (mrs.developer.json should be present)
