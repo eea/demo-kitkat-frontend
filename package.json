@@ -2,7 +2,7 @@
   "name": "demo-kitkat-frontend",
   "description": "EEA KitKat Volto Demo Frontend",
   "license": "MIT",
-  "version": "10.3.0",
+  "version": "10.4.0",
   "scripts": {
     "start": "razzle start",
     "postinstall": "make omelette && make patches",
@@ -137,8 +137,8 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@eeacms/volto-eea-kitkat": "10.3.0",
-    "@plone/volto": "16.4.1"
+    "@eeacms/volto-eea-kitkat": "10.4.0",
+    "@plone/volto": "16.6.0"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.10.0",
