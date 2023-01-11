@@ -270,5 +270,13 @@
     "branch": "develop",
     "develop": true,
     "path": "src"
+  },
+  "volto-redmine-helpdesk": {
+    "url": "https://github.com/eea/volto-redmine-helpdesk.git",
+    "https": "https://github.com/eea/volto-redmine-helpdesk.git",
+    "package": "@eeacms/volto-redmine-helpdesk",
+    "branch": "develop",
+    "develop": true,
+    "path": "src"
   }
 }

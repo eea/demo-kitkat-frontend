@@ -34,7 +34,11 @@
     "build-storybook": "build-storybook"
   },
   "addons": [
-    "@eeacms/volto-eea-kitkat"
+    "@eeacms/volto-eea-kitkat",
+    "@eeacms/volto-redmine-helpdesk"
+  ],
+  "workspaces": [
+    "src/addons/*"
   ],
   "jest": {
     "modulePathIgnorePatterns": [

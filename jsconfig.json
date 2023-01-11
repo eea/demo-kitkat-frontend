@@ -102,6 +102,9 @@
             ],
             "@eeacms/volto-hero-block": [
                 "addons/volto-hero-block/src"
+            ],
+            "@eeacms/volto-redmine-helpdesk": [
+                "addons/volto-redmine-helpdesk/src"
             ]
         },
         "baseUrl": "src"
