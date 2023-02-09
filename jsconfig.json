@@ -102,6 +102,15 @@
             ],
             "@eeacms/volto-hero-block": [
                 "addons/volto-hero-block/src"
+            ],
+            "@plone-collective/volto-sentry": [
+                "addons/volto-sentry/src"
+            ],
+            "@eeacms/volto-anchors": [
+                "addons/volto-anchors/src"
+            ],
+            "@eeacms/volto-widget-theme-picker": [
+                "addons/volto-widget-theme-picker/src"
             ]
         },
         "baseUrl": "src"
