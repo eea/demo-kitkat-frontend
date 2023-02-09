@@ -2,7 +2,7 @@
   "name": "demo-kitkat-frontend",
   "description": "EEA KitKat Volto Demo Frontend",
   "license": "MIT",
-  "version": "10.7.0",
+  "version": "12.0.0",
   "scripts": {
     "start": "razzle start",
     "postinstall": "make omelette && make patches",
@@ -33,6 +33,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "private": true,
+  "workspaces": [
+    "src/addons/*"
+  ],
   "addons": [
     "@eeacms/volto-eea-kitkat"
   ],
@@ -138,7 +142,7 @@
   },
   "dependencies": {
     "@eeacms/volto-eea-kitkat": "11.0.0",
-    "@plone/volto": "16.9.0"
+    "@plone/volto": "16.10.0"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.10.0",
