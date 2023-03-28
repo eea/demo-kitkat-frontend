@@ -111,6 +111,9 @@
             ],
             "@eeacms/volto-widget-theme-picker": [
                 "addons/volto-widget-theme-picker/src"
+            ],
+            "@eeacms/volto-nextcloud-video-block": [
+                "addons/volto-nextcloud-video-block/src"
             ]
         },
         "baseUrl": "src"
