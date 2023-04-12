@@ -142,7 +142,7 @@
   },
   "dependencies": {
     "@eeacms/volto-eea-kitkat": "15.2.1",
-    "@plone/volto": "16.18.0"
+    "@plone/volto": "16.20.0"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.10.0",
