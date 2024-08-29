@@ -97,6 +97,14 @@ install: ## Install the frontend
 develop: ## Runs missdev in the local project (mrs.developer.json should be present)
 	npx -p mrs-developer missdev --config=jsconfig.json --output=addons --fetch-https
 
+.PHONY: build
+build:                  ## Build frontend
+	NODE_OPTIONS="--max-old-space-size=16384" yarn build
+
+.PHONY: bundlewatch
+bundlewatch:
+	yarn bundlewatch --config .bundlewatch.config.json
+
 .PHONY: omelette
 omelette: ## Creates the omelette folder that contains a link to the installed version of Volto (a softlink pointing to node_modules/@plone/volto)
 	if [ ! -d omelette ]; then ln -sf node_modules/@plone/volto omelette; fi
