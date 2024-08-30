@@ -13,19 +13,19 @@ pipeline {
   stages {
 
     stage('Integration tests') {
-      when {
-        allOf {
-          environment name: 'CHANGE_ID', value: ''
-          anyOf {
-           not { changelog '.*^Automated release [0-9\\.]+$' }
-           branch 'master'
-          }
-        }
-      }
-      steps {
-        parallel(
-
-          "Cypress": {
+        parallel{
+          
+          stage("Cypress") {
+	      when {
+                allOf {
+                  environment name: 'CHANGE_ID', value: ''
+                  anyOf {
+                     not { changelog '.*^Automated release [0-9\\.]+$' }
+                     branch 'master'
+                  }
+               }
+             }
+           steps {
             node(label: 'docker') {
               script {
                 try {
@@ -64,12 +64,13 @@ pipeline {
               }
             }
           }
-
+          }
   
           stage('Bundlewatch') {
             when {
       		  branch 'develop'
-     		 }
+                  not { changelog '.*^Automated release [0-9\\.]+$' }
+  	    }
    	   steps {
      	     node(label: 'docker-big-jobs') {
               script {
@@ -77,7 +78,8 @@ pipeline {
             	env.NODEJS_HOME = "${tool 'NodeJS'}"
             	env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
             	env.CI=false
-            	sh "yarn"
+            	sh "yarn config set -H enableImmutableInstalls false"
+                sh "yarn"
             	sh "make develop"
             	sh "make install"
             	sh "make build"
@@ -87,7 +89,7 @@ pipeline {
           }
         }
 
-    )}}
+    }}
 
 
     stage('Pull Request') {
