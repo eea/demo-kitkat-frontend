@@ -1815,12 +1815,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-accordion-block@npm:11.0.1":
-  version: 11.0.1
-  resolution: "@eeacms/volto-accordion-block@npm:11.0.1"
+"@eeacms/volto-accordion-block@npm:11.0.2":
+  version: 11.0.2
+  resolution: "@eeacms/volto-accordion-block@npm:11.0.2"
   dependencies:
     "@eeacms/volto-widget-theme-picker": "*"
-  checksum: f8cce7c9ceab9003dc9790206b9bf3023c7ff7995a7b680b8d7e720c82a24439fcc11d97fc9b2231bc8d767cae269f680b6ec76701b5fd57704f9f8f0c0860cc
+  checksum: a16f26b215bd603461ef303658dc239451bb5d7f8a6a6130e0896e59a0aa45ad1ea9af09a75926234e3e08bb49def7ca14d8a299527a577bc270e46cf0b84f38
   languageName: node
   linkType: hard
 
@@ -1981,12 +1981,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-eea-kitkat@npm:25.3.0":
-  version: 25.3.0
-  resolution: "@eeacms/volto-eea-kitkat@npm:25.3.0"
+"@eeacms/volto-eea-kitkat@npm:25.4.0":
+  version: 25.4.0
+  resolution: "@eeacms/volto-eea-kitkat@npm:25.4.0"
   dependencies:
     "@eeacms/countup": 2.0.6
-    "@eeacms/volto-accordion-block": 11.0.1
+    "@eeacms/volto-accordion-block": 11.0.2
     "@eeacms/volto-anchors": 1.0.0
     "@eeacms/volto-banner": 4.0.0
     "@eeacms/volto-block-data-table": 1.1.0
@@ -2009,9 +2009,9 @@ __metadata:
     "@eeacms/volto-quote-block": 2.0.0
     "@eeacms/volto-resize-helper": 2.0.0
     "@eeacms/volto-sentry-rancher-config": 5.0.0
-    "@eeacms/volto-slate-footnote": 7.0.1
+    "@eeacms/volto-slate-footnote": 7.1.0
     "@eeacms/volto-slate-label": 1.0.0
-    "@eeacms/volto-slate-metadata-mentions": 8.1.1
+    "@eeacms/volto-slate-metadata-mentions": 8.2.0
     "@eeacms/volto-slate-zotero": 6.0.0
     "@eeacms/volto-statistic-block": 5.0.0
     "@eeacms/volto-tabs-block": 8.1.0
@@ -2025,7 +2025,7 @@ __metadata:
     "@eeacms/volto-widget-theme-picker": 2.0.0
     "@eeacms/volto-widget-toggle": 4.0.0
     "@plone-collective/volto-sentry": 0.3.1
-  checksum: eaa138ee3cd52b5a8e65c2e46c86b29cc0aa54fe9c925238afb3a6d5aa81e9b281eb51c811642e128704811b6049ea93a74db69603373cdc068b975387e8dd46
+  checksum: ce9aeb1d622ab732cae154203d6975f46f4b12a3c8d59786e9f4ad66da5343db3744bfcfe7b7c0e16aaa274472e75fc3c8e4a634aca6dc76fa1ea237b64df434
   languageName: node
   linkType: hard
 
@@ -2155,10 +2155,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-slate-footnote@npm:7.0.1":
-  version: 7.0.1
-  resolution: "@eeacms/volto-slate-footnote@npm:7.0.1"
-  checksum: 1c05a3b046bc73f9864276f1cb87eda6fec71d06e1fd59656ac2efe477490c62b2386917872aa11dce2212e5cd6d3e50ad46dd1aacc27832b4028a9acba55252
+"@eeacms/volto-slate-footnote@npm:7.1.0":
+  version: 7.1.0
+  resolution: "@eeacms/volto-slate-footnote@npm:7.1.0"
+  checksum: 61322accde7e391f983a01bb06b462887d93ace2491cab9f73447c9dc8ba90ae684dba85502c339641f524b750a58a077a80ce7aad629926072f8287033af90b
   languageName: node
   linkType: hard
 
@@ -2169,10 +2169,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-slate-metadata-mentions@npm:8.1.1":
-  version: 8.1.1
-  resolution: "@eeacms/volto-slate-metadata-mentions@npm:8.1.1"
-  checksum: e2388c63a3f34e3131256167191fddb3e6fd9a2a2d27ae659131631e6d0b61966daf6a3ad37bd5cba8ac62849cad5628ed94c23ada07a18bb3e34d192f02da30
+"@eeacms/volto-slate-metadata-mentions@npm:8.2.0":
+  version: 8.2.0
+  resolution: "@eeacms/volto-slate-metadata-mentions@npm:8.2.0"
+  checksum: 04bc7f6f68b6b6122d63932ef6164a6e9a9e0066641e7dba7a66888d270b58eba69dbb2e6c45dedb667ae048a72046ed5435fffcc403bc2613ee1260bb5ebf62
   languageName: node
   linkType: hard
 
@@ -7009,6 +7009,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^0.24.0":
+  version: 0.24.0
+  resolution: "axios@npm:0.24.0"
+  dependencies:
+    follow-redirects: ^1.14.4
+  checksum: 468cf496c08a6aadfb7e699bebdac02851e3043d4e7d282350804ea8900e30d368daa6e3cd4ab83b8ddb5a3b1e17a5a21ada13fc9cebd27b74828f47a4236316
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^2.0.2":
   version: 2.2.0
   resolution: "axobject-query@npm:2.2.0"
@@ -7860,6 +7869,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bundlewatch@npm:0.3.3":
+  version: 0.3.3
+  resolution: "bundlewatch@npm:0.3.3"
+  dependencies:
+    axios: ^0.24.0
+    bytes: ^3.1.1
+    chalk: ^4.0.0
+    ci-env: ^1.17.0
+    commander: ^5.0.0
+    glob: ^7.1.2
+    gzip-size: ^6.0.0
+    jsonpack: ^1.1.5
+    lodash.merge: ^4.6.1
+    read-pkg-up: ^7.0.1
+  bin:
+    bundlewatch: lib/bin/index.js
+  checksum: ed47e5081664b667c512ef9c4f4d3b60228580939727b3ab39ff2f19c89b3fece7cdd0d0a175ed3ab0ade73a185b60ed9f9bc61a0b36c44f10835b2069f22c6a
+  languageName: node
+  linkType: hard
+
 "bytes@npm:3.0.0":
   version: 3.0.0
   resolution: "bytes@npm:3.0.0"
@@ -7867,7 +7896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bytes@npm:3.1.2, bytes@npm:^3.0.0":
+"bytes@npm:3.1.2, bytes@npm:^3.0.0, bytes@npm:^3.1.1":
   version: 3.1.2
   resolution: "bytes@npm:3.1.2"
   checksum: e4bcd3948d289c5127591fbedf10c0b639ccbf00243504e4e127374a15c3bc8eed0d28d4aaab08ff6f1cf2abc0cce6ba3085ed32f4f90e82a5683ce0014e1b6e
@@ -8340,7 +8369,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ci-env@npm:^1.14.0":
+"ci-env@npm:^1.14.0, ci-env@npm:^1.17.0":
   version: 1.17.0
   resolution: "ci-env@npm:1.17.0"
   checksum: e6a06d9a6c5abce1ab8fa0f1b0f80e7eb7615d59a937ed0a20a3589441cf49cff1fc64f4fa4b289e3b789dd4a1d9a8255f36a93ed3fc15b6e2be9b795d21fb46
@@ -10383,7 +10412,7 @@ __metadata:
   resolution: "demo-kitkat-frontend@workspace:."
   dependencies:
     "@cypress/code-coverage": ^3.10.0
-    "@eeacms/volto-eea-kitkat": 25.3.0
+    "@eeacms/volto-eea-kitkat": 25.4.0
     "@plone/scripts": ^2.1.2
     "@plone/volto": 16.20.0
     "@storybook/addon-actions": ^6.3.0
@@ -10391,6 +10420,7 @@ __metadata:
     "@storybook/addon-essentials": ^6.3.0
     "@storybook/addon-links": ^6.3.0
     "@storybook/react": ^6.3.0
+    bundlewatch: 0.3.3
     cypress-fail-fast: ^5.0.1
     eslint-plugin-prettier: 3.1.3
     jest-junit: 8.0.0
@@ -12620,6 +12650,16 @@ __metadata:
     debug:
       optional: true
   checksum: faa66059b66358ba65c234c2f2a37fcec029dc22775f35d9ad6abac56003268baf41e55f9ee645957b32c7d9f62baf1f0b906e68267276f54ec4b4c597c2b190
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.14.4":
+  version: 1.15.9
+  resolution: "follow-redirects@npm:1.15.9"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 859e2bacc7a54506f2bf9aacb10d165df78c8c1b0ceb8023f966621b233717dab56e8d08baadc3ad3b9db58af290413d585c999694b7c146aaf2616340c3d2a6
   languageName: node
   linkType: hard
 
