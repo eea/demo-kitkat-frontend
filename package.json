@@ -141,7 +141,7 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@eeacms/volto-eea-kitkat": "33.0.4",
+    "@eeacms/volto-eea-kitkat": "33.0.5",
     "@plone/volto": "16.20.0"
   },
   "devDependencies": {
